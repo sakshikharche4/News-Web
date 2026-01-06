@@ -5,7 +5,7 @@ const Hero = () => {
   const [data, setData] = useState([])
 
   const url =
-    'https://newsapi.org/v2/top-headlines?country=us&apiKey=7912e5277f974321b02406e982016dba'
+    '"/.netlify/functions/news?category=business"'
 
   useEffect(() => {
     const getData = async () => {

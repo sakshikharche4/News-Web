@@ -17,7 +17,7 @@ const Searchbar = () => {
         setLoading(true);
 
         const res = await fetch(
-          `https://newsapi.org/v2/everything?q=${input}&sortBy=publishedAt&apiKey=7912e5277f974321b02406e982016dba`
+          `"/.netlify/functions/news?category=business"`
         );
         const data = await res.json();
         setResult(data.articles || []);
