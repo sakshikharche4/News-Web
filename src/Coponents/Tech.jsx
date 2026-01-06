@@ -26,7 +26,8 @@ const Tech = () => {
       <Navbar />
       <div className="bg-slate-300 min-h-screen w-full p-6 flex flex-wrap justify-center gap-6">
         {data.length > 0 ? (
-          data.map((item, index) => <Card key={index} article={item} />)) : (
+          data.map((item, index) => <Card key={index} article={item} />)
+        ) : (
           <p className="text-gray-700 text-lg">Loading news...</p>
         )}
       </div>

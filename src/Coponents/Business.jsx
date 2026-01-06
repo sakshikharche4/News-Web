@@ -5,7 +5,7 @@ import Card from "./Card";
 const Business = () => {
   const [data, setData] = useState([]);
   const url =
-    "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=YOUR_API_KEY";
+    "/.netlify/functions/news?category=business";
 
   useEffect(() => {
     const fetchData = async () => {
